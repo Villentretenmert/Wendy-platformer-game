@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0750302D-77F2-FA55-CD97-43A736CEB0C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneLinux:17</UnityBuildTarget>
+    <UnityVersion>5.2.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_2_1;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_2_1;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\1\MogilaScript.cs" />
+    <Compile Include="Assets\Scripts\1\Palatka1.cs" />
+    <Compile Include="Assets\Scripts\1\SchetchicTsvetov.cs" />
+    <Compile Include="Assets\Scripts\1\TekstScript1.cs" />
+    <Compile Include="Assets\Scripts\1\catcoon1.cs" />
+    <Compile Include="Assets\Scripts\1\dobrajaAbigailScript.cs" />
+    <Compile Include="Assets\Scripts\1\enot.cs" />
+    <Compile Include="Assets\Scripts\1\flover.cs" />
+    <Compile Include="Assets\Scripts\2\EdaScript.cs" />
+    <Compile Include="Assets\Scripts\2\EdaScript1.cs" />
+    <Compile Include="Assets\Scripts\2\EdaScript2.cs" />
+    <Compile Include="Assets\Scripts\2\EdaScript3.cs" />
+    <Compile Include="Assets\Scripts\2\EdaScript4.cs" />
+    <Compile Include="Assets\Scripts\2\KotelScript.cs" />
+    <Compile Include="Assets\Scripts\2\Palatka2.cs" />
+    <Compile Include="Assets\Scripts\2\SchetchicEda.cs" />
+    <Compile Include="Assets\Scripts\2\Teftelli.cs" />
+    <Compile Include="Assets\Scripts\2\TekstScript2.cs" />
+    <Compile Include="Assets\Scripts\2\fier.cs" />
+    <Compile Include="Assets\Scripts\2\pchelaScript.cs" />
+    <Compile Include="Assets\Scripts\3\PoluprigScript.cs" />
+    <Compile Include="Assets\Scripts\3\SchetchicVoron.cs" />
+    <Compile Include="Assets\Scripts\3\TekstScript3.cs" />
+    <Compile Include="Assets\Scripts\3\VoronScript.cs" />
+    <Compile Include="Assets\Scripts\3\diedflover.cs" />
+    <Compile Include="Assets\Scripts\3\imaVoronaScript.cs" />
+    <Compile Include="Assets\Scripts\3\mogila3Script.cs" />
+    <Compile Include="Assets\Scripts\3\muhaKrokodilScript.cs" />
+    <Compile Include="Assets\Scripts\3\prigLeftVerhScript.cs" />
+    <Compile Include="Assets\Scripts\3\zlajaAbigail.cs" />
+    <Compile Include="Assets\Scripts\4\ShetchicPaukov.cs" />
+    <Compile Include="Assets\Scripts\4\TekstScript4.cs" />
+    <Compile Include="Assets\Scripts\4\abigailMoveScript.cs" />
+    <Compile Include="Assets\Scripts\4\grib.cs" />
+    <Compile Include="Assets\Scripts\4\imapauka.cs" />
+    <Compile Include="Assets\Scripts\4\paukScript.cs" />
+    <Compile Include="Assets\Scripts\4\pojavleniePaukovScript.cs" />
+    <Compile Include="Assets\Scripts\4\poluprigalkiDlaPauka.cs" />
+    <Compile Include="Assets\Scripts\4\prigalkiDlaPauka.cs" />
+    <Compile Include="Assets\Scripts\LogovoPaukov.cs" />
+    <Compile Include="Assets\Scripts\OblakoScript.cs" />
+    <Compile Include="Assets\Scripts\PerehodNaUroven.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\Player\CharacterControllerScript.cs" />
+    <Compile Include="Assets\Scripts\Player\HpImage.cs" />
+    <Compile Include="Assets\Scripts\Player\PredmetImage.cs" />
+    <Compile Include="Assets\Scripts\Player\SchetchikHeals.cs" />
+    <Compile Include="Assets\Scripts\Player\kolichestvoPredmetov1.cs" />
+    <Compile Include="Assets\Scripts\Player\kolichestvoPredmetov2.cs" />
+    <Compile Include="Assets\Scripts\Player\kolichestvoPredmetov3.cs" />
+    <Compile Include="Assets\Scripts\Player\kolichestvoPredmetov4.cs" />
+    <Compile Include="Assets\Scripts\Player\paus.cs" />
+    <Compile Include="Assets\Scripts\Player\vihod.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\enotVpalatke.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet10Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet11Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet12Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet13Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet14Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet1Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet1oScript.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet2Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet3Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet4Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet5Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet6Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet7Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\predmet9Script.cs" />
+    <Compile Include="Assets\Scripts\enotVpalatke\tekstenot.cs" />
+    <Compile Include="Assets\Scripts\konez.cs" />
+    <Compile Include="Assets\Scripts\menu\botton3Script.cs" />
+    <Compile Include="Assets\Scripts\menu\button1Script.cs" />
+    <Compile Include="Assets\Scripts\menu\button2Script.cs" />
+    <Compile Include="Assets\Scripts\menu\button4Script.cs" />
+    <Compile Include="Assets\Scripts\titri.cs" />
+    <Compile Include="Assets\cheat.cs" />
+    <Compile Include="Assets\exitbtn.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
