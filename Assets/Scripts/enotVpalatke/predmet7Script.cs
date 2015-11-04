@@ -9,6 +9,7 @@ public class predmet7Script : MonoBehaviour {
     {
         if (enotVpalatke.predmet7enot == 1)
         {
+            enotVpalatke.predmet7enot = 0;
             enotVpalatke.EnotLife += 1;
             GetComponent<AudioSource>().PlayOneShot(enotSound);
         }

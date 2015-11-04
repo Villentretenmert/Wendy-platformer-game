@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class muhaKrokodilScript : MonoBehaviour {
-    private float tekTochkaX = 1f;
-    private float proshTochkaX = 1f;
+      
     //----------------------------------------------------------------------------
     //связь с игроком
     public Transform _playerTransform;
@@ -45,7 +44,7 @@ public class muhaKrokodilScript : MonoBehaviour {
         playerY = _playerTransform.position.y;
         spawnPoint = playerY;
         transform.position = new Vector3(40, spawnPoint, -1);
-        proshTochkaX = GetComponent<Transform>().position.x;
+        
     }
 
 

@@ -13,7 +13,7 @@ public class pchelaScript : MonoBehaviour {
     private float tekTochkaY = 1f;
 
     private float proshTochkaX = 1f;
-    private float proshTochkaY = 1f;
+
 
     public Rigidbody2D rb;
 
@@ -47,7 +47,7 @@ public class pchelaScript : MonoBehaviour {
         proshTochkaX = nachTochkaX;
 
         nachTochkaY = GetComponent<Transform>().position.y;
-        proshTochkaY = nachTochkaY;
+        
         rb = GetComponent<Rigidbody2D>();
     }
 

@@ -9,14 +9,14 @@ public class TekstScript4 : MonoBehaviour
 
     public Palatka1 Palatka1;
     public LogovoPaukov LogovoPaukov;
-    private float Timer1 = 2;
-    private float TimerDown;
+    
+
     public SchetchikHeals SchetchikHeals;
     Text txt;
 
     void Start()
     {
-        TimerDown = Timer1;
+        
         txt = gameObject.GetComponent<Text>();
         txt.text = "Night of nightmares!\nLet Abigail be between me and  monsters";
     }

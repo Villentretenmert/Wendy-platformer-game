@@ -35,9 +35,11 @@ public class KotelScript : MonoBehaviour
             {
                 SobrE.SobranoEda = 7;
                 sobitieOgon = 1;
+
                 SpriteRenderer sp = GetComponent<SpriteRenderer>();
                 sp.sprite = Resources.Load<Sprite>("Sprites/object/22kotel");
                 GetComponent<AudioSource>().PlayOneShot(tefteliSound);
+                PerehodNaUroven.ZapretDvijenia = 1;
             }
 
             
@@ -48,12 +50,13 @@ public class KotelScript : MonoBehaviour
 
     void Update()
     {
-        if (sobitieOgon == 1)
+        if (sobitieOgon == 1&& sobitieTefteli == 0)
         {
             if (TimerDown > 0) TimerDown -= Time.deltaTime; //Если время которое нужно отсчитать еще осталось убавляем от него время обновления экрана (в одну секунду будет убавляться полная единица)
             if (TimerDown < 0) TimerDown = 0; //Если временная переменная ушла в отрицательное число (все возможно) то приравниваем ее к нулю
             if (TimerDown == 0)
             {
+                Timer += 1;
                 TimerDown = Timer; //Благодаря этой строке таймер запустится заново после выполнения всех действий в скобках
                 tefteli.SetActive(true);
                 SpriteRenderer sp = GetComponent<SpriteRenderer>();
@@ -69,9 +72,8 @@ public class KotelScript : MonoBehaviour
             if (TimerDown < 0) TimerDown = 0; //Если временная переменная ушла в отрицательное число (все возможно) то приравниваем ее к нулю
             if (TimerDown == 0)
             {
-                TimerDown = Timer; //Благодаря этой строке таймер запустится заново после выполнения всех действий в скобках
                 PerehodNaUroven.MaxVozmUroven = 3;
-
+                PerehodNaUroven.ZapretDvijenia = 0;
                 Palatka2.SobranoDichi = 0;
                 Palatka2.videlaRaz = 0;
     Application.LoadLevel("GameMenu");

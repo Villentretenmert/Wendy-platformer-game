@@ -21,6 +21,11 @@ public class CharacterControllerScript : MonoBehaviour
     //ссылка на слой, представляющий землю
     public LayerMask whatIsGround;
 
+
+    //------------------------------------------------------------------------------------------------
+    //блок движения при окончании уровня
+    private float muve;
+
     /// <summary>
     /// Начальная инициализация
     /// </summary>
@@ -38,7 +43,7 @@ public class CharacterControllerScript : MonoBehaviour
     /// </summary>
     private void FixedUpdate()
     {
-        
+
 
 
         //определяем, на земле ли персонаж
@@ -54,30 +59,34 @@ public class CharacterControllerScript : MonoBehaviour
         //при стандартных настройках проекта 
         //-1 возвращается при нажатии на клавиатуре стрелки влево (или клавиши А),
         //1 возвращается при нажатии на клавиатуре стрелки вправо (или клавиши D)
-        float move = Input.GetAxis("Horizontal");
+        
+            float move = Input.GetAxis("Horizontal");
 
-        //в компоненте анимаций изменяем значение параметра Speed на значение оси Х.
-        //приэтом нам нужен модуль значения
-        anim.SetFloat("Speed", Mathf.Abs(move));
+            //в компоненте анимаций изменяем значение параметра Speed на значение оси Х.
+            //приэтом нам нужен модуль значения
+            anim.SetFloat("Speed", Mathf.Abs(move));
 
         //обращаемся к компоненту персонажа RigidBody2D. задаем ему скорость по оси Х, 
         //равную значению оси Х умноженное на значение макс. скорости
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
-        //если нажали клавишу для перемещения вправо, а персонаж направлен влево
-        if (move > 0 && !isFacingRight)
-            //отражаем персонажа вправо
-            Flip();
-        //обратная ситуация. отражаем персонажа влево
-        else if (move < 0 && isFacingRight)
-            Flip();
-    }
-
+       if (PerehodNaUroven.ZapretDvijenia == 0)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            muve = move;
+       }
+            //если нажали клавишу для перемещения вправо, а персонаж направлен влево
+            if (muve > 0 && !isFacingRight)
+                //отражаем персонажа вправо
+                Flip();
+            //обратная ситуация. отражаем персонажа влево
+            else if (muve < 0 && isFacingRight)
+                Flip();
+      }
+    
     
     private void Update()
     {
         //если персонаж на земле и нажат пробел...
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && PerehodNaUroven.ZapretDvijenia == 0)
         {
             //устанавливаем в аниматоре переменную в false
             anim.SetBool("Ground", false);
@@ -94,13 +103,15 @@ public class CharacterControllerScript : MonoBehaviour
     /// </summary>
     private void Flip()
     {
-        //меняем направление движения персонажа
-        isFacingRight = !isFacingRight;
-        //получаем размеры персонажа
-        Vector3 theScale = transform.localScale;
-        //зеркально отражаем персонажа по оси Х
-        theScale.x *= -1;
-        //задаем новый размер персонажа, равный старому, но зеркально отраженный
-        transform.localScale = theScale;
-    }
+        
+            //меняем направление движения персонажа
+            isFacingRight = !isFacingRight;
+            //получаем размеры персонажа
+            Vector3 theScale = transform.localScale;
+            //зеркально отражаем персонажа по оси Х
+            theScale.x *= -1;
+            //задаем новый размер персонажа, равный старому, но зеркально отраженный
+            transform.localScale = theScale;
+        }
+    
 }
