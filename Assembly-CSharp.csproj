@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{1F34B00B-2F3F-AEC0-862D-FD847C4FCB90}</ProjectGuid>
+	<ProjectGuid>{D0EF0092-A1F3-456B-D66D-0469BD5EAE52}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\4\grib.cs" />
      <Compile Include="Assets\Scripts\4\imapauka.cs" />
      <Compile Include="Assets\Scripts\4\paukScript.cs" />
+     <Compile Include="Assets\Scripts\4\paukanScript.cs" />
      <Compile Include="Assets\Scripts\4\pojavleniePaukovScript.cs" />
      <Compile Include="Assets\Scripts\4\poluprigalkiDlaPauka.cs" />
      <Compile Include="Assets\Scripts\4\prigalkiDlaPauka.cs" />
@@ -119,18 +120,14 @@
      <Compile Include="Assets\Scripts\menu\button1Script.cs" />
      <Compile Include="Assets\Scripts\menu\button2Script.cs" />
      <Compile Include="Assets\Scripts\menu\button4Script.cs" />
+     <Compile Include="Assets\Scripts\menu\cheat.cs" />
+     <Compile Include="Assets\Scripts\menu\exitbtn.cs" />
      <Compile Include="Assets\Scripts\titri.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

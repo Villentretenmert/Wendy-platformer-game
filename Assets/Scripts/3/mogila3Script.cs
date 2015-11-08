@@ -30,6 +30,7 @@ public class mogila3Script : MonoBehaviour {
         {
             if (SchetchicVoron.SobranoVoron == SchetchicVoron.maxVoron)
             {
+                PerehodNaUroven.ZapretDvijenia = 1;
                 sobitieKrov = 1;
                 SpriteRenderer sp = GetComponent<SpriteRenderer>();
                 sp.sprite = Resources.Load<Sprite>("Sprites/object/1mogila2");
@@ -46,12 +47,13 @@ public class mogila3Script : MonoBehaviour {
 
     void Update()
     {
-        if (sobitieKrov == 1)
+        if (sobitieKrov == 1 && sobitieBesheniPrizrak == 0)
         {
             if (TimerDown > 0) TimerDown -= Time.deltaTime; //Если время которое нужно отсчитать еще осталось убавляем от него время обновления экрана (в одну секунду будет убавляться полная единица)
             if (TimerDown < 0) TimerDown = 0; //Если временная переменная ушла в отрицательное число (все возможно) то приравниваем ее к нулю
             if (TimerDown == 0)
             {
+                Timer1 += 1;
                 TimerDown = Timer1; //Благодаря этой строке таймер запустится заново после выполнения всех действий в скобках
 
                 sister3.SetActive(true);//Сюда дописываем действия которые произойдут после конца отсчета
@@ -66,10 +68,8 @@ public class mogila3Script : MonoBehaviour {
             if (TimerDown < 0) TimerDown = 0; //Если временная переменная ушла в отрицательное число (все возможно) то приравниваем ее к нулю
             if (TimerDown == 0)
             {
-                TimerDown = Timer1; //Благодаря этой строке таймер запустится заново после выполнения всех действий в скобках
-
                 PerehodNaUroven.MaxVozmUroven = 4;
-
+                PerehodNaUroven.ZapretDvijenia = 0;
                 diedflover.UTsvetka = 0;
 
                 diedflover.videlaRaz = 0;

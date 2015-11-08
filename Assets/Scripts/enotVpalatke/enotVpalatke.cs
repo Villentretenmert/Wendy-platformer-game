@@ -182,80 +182,67 @@ public class enotVpalatke : MonoBehaviour
                 {
                     SpriteRenderer sp1e = predmet1.GetComponent<SpriteRenderer>();
                     sp1e.sprite = Resources.Load<Sprite>("enotVpalatke/1");
-                    predmet1enot = 0;
-                }
+                                    }
                 else if (lastNomerPredmet == 2)
                 {
                     SpriteRenderer sp2e = predmet2.GetComponent<SpriteRenderer>();
                     sp2e.sprite = Resources.Load<Sprite>("enotVpalatke/2");
-                    predmet2enot = 0;
-                }
+                    }
                 else if (lastNomerPredmet == 3)
                 {
                     SpriteRenderer sp3e = predmet3.GetComponent<SpriteRenderer>();
                     sp3e.sprite = Resources.Load<Sprite>("enotVpalatke/3");
-                    predmet3enot = 0;
-                }
+                    }
                 else if (lastNomerPredmet == 4)
                 {
                     SpriteRenderer sp4e = predmet4.GetComponent<SpriteRenderer>();
                     sp4e.sprite = Resources.Load<Sprite>("enotVpalatke/4");
-                    predmet4enot = 0;
-                }
+                    }
                 else if (lastNomerPredmet == 5)
                 {
                     SpriteRenderer sp5e = predmet5.GetComponent<SpriteRenderer>();
                     sp5e.sprite = Resources.Load<Sprite>("enotVpalatke/5");
-                    predmet5enot = 0;
-                }
+                    }
                 else if (lastNomerPredmet == 6)
                 {
                     SpriteRenderer sp6e = predmet6.GetComponent<SpriteRenderer>();
                     sp6e.sprite = Resources.Load<Sprite>("enotVpalatke/6");
-                    predmet6enot = 0;
-                }
+                   }
                 else if (lastNomerPredmet == 7)
                 {
                     SpriteRenderer sp7e = predmet7.GetComponent<SpriteRenderer>();
                     sp7e.sprite = Resources.Load<Sprite>("enotVpalatke/7");
-                    predmet7enot = 0;
-                }
+                  }
                 else if (lastNomerPredmet == 9)
                 {
                     SpriteRenderer sp9e = predmet9.GetComponent<SpriteRenderer>();
                     sp9e.sprite = Resources.Load<Sprite>("enotVpalatke/9");
-                    predmet9enot = 0;
-                }
+                    }
                 else if (lastNomerPredmet == 10)
                 {
                     SpriteRenderer sp10e = predmet10.GetComponent<SpriteRenderer>();
                     sp10e.sprite = Resources.Load<Sprite>("enotVpalatke/10");
-                    predmet10enot = 0;
-                }
+                   }
                 else if (lastNomerPredmet == 11)
                 {
                     SpriteRenderer sp11e = predmet11.GetComponent<SpriteRenderer>();
                     sp11e.sprite = Resources.Load<Sprite>("enotVpalatke/11");
-                    predmet11enot = 0;
-                }
+                  }
                 else if (lastNomerPredmet == 12)
                 {
                     SpriteRenderer sp12e = predmet12.GetComponent<SpriteRenderer>();
                     sp12e.sprite = Resources.Load<Sprite>("enotVpalatke/12");
-                    predmet12enot = 0;
-                }
+                  }
                 else if (lastNomerPredmet == 13)
                 {
                     SpriteRenderer sp13e = predmet13.GetComponent<SpriteRenderer>();
                     sp13e.sprite = Resources.Load<Sprite>("enotVpalatke/13");
-                    predmet13enot = 0;
                 }
                 else if (lastNomerPredmet == 14)
                 {
                     SpriteRenderer sp14e = predmet14.GetComponent<SpriteRenderer>();
                     sp14e.sprite = Resources.Load<Sprite>("enotVpalatke/14");
-                    predmet14enot = 0;
-                }
+                 }
 
 
                 lastNomerPredmet = NomerPredmet;

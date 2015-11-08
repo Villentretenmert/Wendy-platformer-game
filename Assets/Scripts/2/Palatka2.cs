@@ -8,12 +8,12 @@ public class Palatka2 : MonoBehaviour {
     public SchetchicEda SchetchicEda;
     public static int videlaRaz = 0;
     public int VPalatke = 0;
-
+    public PerehodNaUroven PerehodNaUroven;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" )
         {
-            if (videlaRaz == 0)
+            if (videlaRaz == 0 && PerehodNaUroven.ZapretDvijenia == 0)
             {
                 SobranoDichi = SchetchicEda.SobranoEda;
                 Application.LoadLevel("enotVpalatke");

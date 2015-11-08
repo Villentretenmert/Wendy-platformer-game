@@ -42,7 +42,7 @@ public class SchetchikHeals : MonoBehaviour
 
         if (Heals == 0)
         {
-
+            Hpblood.SetActive(false);
             SpriteRenderer sp = GetComponent<SpriteRenderer>();
             sp.sprite = Resources.Load<Sprite>("Sprites/object/wendyDied");
             if (sobitieSmert == 0)

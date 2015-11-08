@@ -8,7 +8,7 @@ public class dobrajaAbigailScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && UAbigail==0)
         {
             UAbigail = 1;
             GetComponent<AudioSource>().PlayOneShot(dobrajaAbigailvSound);
